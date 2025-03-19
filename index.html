@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #6bb9f0; /* Joyride-inspired blue */
+            background-color: #4a90e2; /* Darker blue from Joyride */
             color: #000000;
             margin: 0;
             padding: 0;
@@ -49,7 +49,24 @@
         .video-box {
             width: 30%;
             height: 200px;
-            background-color: #ffffff; /* White for contrast against blue */
+            background-color: #ffffff; /* White for contrast */
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden; /* Ensures iframe fits neatly */
+        }
+        .video-box iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .video-placeholder {
+            width: 30%;
+            height: 200px;
+            background-color: #ffffff;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
@@ -79,9 +96,11 @@
         </div>
         <h1>Joyride Candy is Delicious, but don’t take our word for it</h1>
         <div class="video-section">
-            <div class="video-box">Video 1 Placeholder</div>
-            <div class="video-box">Video 2 Placeholder</div>
-            <div class="video-box">Video 3 Placeholder</div>
+            <div class="video-box">
+                <iframe src="https://youtube.com/embed/4jQtTKY-Irw?si=h_Z9EAzt5HgGx0RL" allowfullscreen></iframe>
+            </div>
+            <div class="video-placeholder">Video 2 Placeholder</div>
+            <div class="video-placeholder">Video 3 Placeholder</div>
         </div>
         <p>
             Joyride Sweets candy is a game-changer in the world of treats—bursting with bold, tangy flavors and a chewy texture that keeps you coming back for more. Made with real, plant-based ingredients and 80% less sugar than traditional candies, it’s a guilt-free indulgence that doesn’t skimp on deliciousness. From sour strips to fruity ropes, every bite delivers a punch of joy that’s as satisfying as it is innovative. Trust us, your taste buds will thank you!
