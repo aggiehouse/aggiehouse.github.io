@@ -58,4 +58,69 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             overflow: hidden; /* Ensures iframe fits neatly */
         }
-        .
+        .video-box iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .video-placeholder {
+            width: 30%;
+            height: 200px;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for readability */
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .footer {
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .video-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .video-box, .video-placeholder {
+                width: 90%; /* Full width on mobile with some margin */
+                max-width: 400px; /* Limits width for better scaling */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="https://www.amazon.com" target="_blank" class="amazon-link">Get Joyride Now</a>
+        </div>
+        <h1>Joyride Candy is Delicious, but don’t take our word for it</h1>
+        <div class="video-section">
+            <div class="video-box">
+                <iframe src="https://youtube.com/embed/4jQtTKY-Irw?si=h_Z9EAzt5HgGx0RL" allowfullscreen></iframe>
+            </div>
+            <div class="video-box">
+                <iframe src="https://youtube.com/embed/NUj5UnDZhcM?si=_yvB073OZRV-Gq49" allowfullscreen></iframe>
+            </div>
+            <div class="video-placeholder">Video 3 Placeholder</div>
+        </div>
+        <p>
+            Joyride Sweets candy is a game-changer in the world of treats—bursting with bold, tangy flavors and a chewy texture that keeps you coming back for more. Made with real, plant-based ingredients and 80% less sugar than traditional candies, it’s a guilt-free indulgence that doesn’t skimp on deliciousness. From sour strips to fruity ropes, every bite delivers a punch of joy that’s as satisfying as it is innovative. Trust us, your taste buds will thank you!
+        </p>
+        <div class="footer">
+            <a href="https://www.amazon.com" target="_blank" class="amazon-link">Get Joyride Now</a>
+        </div>
+    </div>
+</body>
+</html>
