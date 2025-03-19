@@ -3,88 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyride Candy is Delicioc</title>
+    <title>Joyride Candy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
             margin: 0;
             padding: 0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background: linear-gradient(135deg, #ffccff, #ccffcc, #cce5ff);
-            color: #333;
             text-align: center;
-        }
-        header {
-            background: url('https://www.transparenttextures.com/patterns/candyhole.png');
-            padding: 20px;
-            border-bottom: 5px solid #ff69b4;
-        }
-        header h1 {
-            font-size: 48px;
-            color: #ff1493;
-            text-shadow: 2px 2px #fff;
         }
         .container {
             max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            padding: 20px;
+        }
+        .amazon-link {
+            display: inline-block;
+            background-color: #ff4081; /* Vibrant pink accent */
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .amazon-link:hover {
+            background-color: #e91e63;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #000000;
+        }
+        .video-section {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
         }
         .video-box {
             width: 30%;
-            margin: 20px 0;
-            background: #fff;
-            border: 3px dashed #ffa500;
-            border-radius: 15px;
-            padding: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .video-placeholder {
-            width: 100%;
             height: 200px;
-            background: #ffe4e1;
+            background-color: #f5f5f5; /* Light gray placeholder */
+            margin-bottom: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 18px;
-            color: #ff4500;
             border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        footer {
-            background: #ff69b4;
-            color: #fff;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 40px;
         }
-        @media (max-width: 768px) {
-            .video-box {
-                width: 80%;
-            }
+        .footer {
+            padding: 20px;
+            background-color: #f5f5f5;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Is Joyride Candy Delicious?</h1>
-    </header>
     <div class="container">
-        <div class="video-box">
-            <div class="video-placeholder">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Jw2zhJl8_Ik?si=O9tHMGPwFWOrKylQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        <div class="header">
+            <a href="https://www.amazon.com" target="_blank" class="amazon-link">Get Joyride Now</a>
         </div>
-        <div class="video-box">
-            <div class="video-placeholder">Video 2 Placeholder (Insert Your Video Here)</div>
+        <h1>Joyride Candy is Delicious, but don’t take our word for it</h1>
+        <div class="video-section">
+            <div class="video-box">Video 1 Placeholder</div>
+            <div class="video-box">Video 2 Placeholder</div>
+            <div class="video-box">Video 3 Placeholder</div>
         </div>
-        <div class="video-box">
-            <div class="video-placeholder">Video 3 Placeholder (Insert Your Video Here)</div>
+        <p>
+            Joyride Sweets candy is a game-changer in the world of treats—bursting with bold, tangy flavors and a chewy texture that keeps you coming back for more. Made with real, plant-based ingredients and 80% less sugar than traditional candies, it’s a guilt-free indulgence that doesn’t skimp on deliciousness. From sour strips to fruity ropes, every bite delivers a punch of joy that’s as satisfying as it is innovative. Trust us, your taste buds will thank you!
+        </p>
+        <div class="footer">
+            <a href="https://www.amazon.com" target="_blank" class="amazon-link">Get Joyride Now</a>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2025 Candy Store - Sweetest Videos Around!</p>
-    </footer>
 </body>
 </html>
