@@ -17,23 +17,22 @@
         }
 
         .logo-container {
-            text-align: center;
             position: relative;
             display: inline-block;
         }
 
-        /* Outline text (behind) */
+        /* Larger outline for JOYRIDE */
         .logo-outline {
             position: absolute;
             top: 0;
             left: 0;
             color: #4d0b7c;
             z-index: -1;
-            -webkit-text-stroke: 4px #4d0b7c;
-            opacity: 0.9; /* Slight transparency reduces edge artifacts */
+            -webkit-text-stroke: 6px #4d0b7c;
+            opacity: 0.9;
         }
 
-        /* Regular white text (on top) */
+        /* Main text for JOYRIDE */
         .logo-text {
             font-family: 'Montserrat', sans-serif;
             font-size: 72px;
@@ -42,17 +41,14 @@
             letter-spacing: 5px;
         }
 
-        /* Tagline */
-        .tagline {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            color: white;
-            position: relative;
-            display: block;
-            margin-top: -10px;
+        /* Tagline positioned closer and right-aligned */
+        .tagline-container {
+            position: absolute;
+            top: 75px; /* Moves closer to "JOYRIDE" */
+            right: 0; /* Aligns to the right */
         }
 
+        /* Smaller outline for Uncommon Candy */
         .tagline-outline {
             position: absolute;
             top: 0;
@@ -62,6 +58,15 @@
             -webkit-text-stroke: 2px #4d0b7c;
             opacity: 0.9;
         }
+
+        /* Main text for Uncommon Candy */
+        .tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            color: white;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -69,8 +74,10 @@
         <div class="logo-outline logo-text">JOYRIDE</div>
         <div class="logo-text">JOYRIDE</div>
 
-        <div class="logo-outline tagline">Uncommon Candy</div>
-        <div class="tagline">Uncommon Candy</div>
+        <div class="tagline-container">
+            <div class="tagline-outline tagline">Uncommon Candy</div>
+            <div class="tagline">Uncommon Candy</div>
+        </div>
     </div>
 </body>
 </html>
