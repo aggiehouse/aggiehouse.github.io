@@ -4,19 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOYRIDE Logo Approximation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        body {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .logo-container {
+            text-align: center;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Outline text (behind) */
+        .logo-outline {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #4d0b7c;
+            z-index: -1;
+            -webkit-text-stroke: 4px #4d0b7c;
+            opacity: 0.9; /* Slight transparency reduces edge artifacts */
+        }
+
+        /* Regular white text (on top) */
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 72px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 5px;
+        }
+
+        /* Tagline */
+        .tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            color: white;
+            position: relative;
+            display: block;
+            margin-top: -10px;
+        }
+
+        .tagline-outline {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #4d0b7c;
+            z-index: -1;
+            -webkit-text-stroke: 2px #4d0b7c;
+            opacity: 0.9;
+        }
+    </style>
 </head>
-<body style="display: flex; justify-content: center; align-items: center; height: 100vh; background: white; margin: 0;">
-    <svg width="500" height="200" viewBox="0 0 500 200">
-        <text x="50%" y="50%" font-family="Montserrat, sans-serif" font-size="72" font-weight="700"
-            fill="white" stroke="#4d0b7c" stroke-width="4" stroke-linejoin="round" 
-            text-anchor="middle" dominant-baseline="middle">
-            JOYRIDE
-        </text>
-        <text x="50%" y="75%" font-family="Montserrat, sans-serif" font-size="24" font-weight="400"
-            fill="white" stroke="#4d0b7c" stroke-width="2" stroke-linejoin="round"
-            text-anchor="middle" dominant-baseline="middle">
-            Uncommon Candy
-        </text>
-    </svg>
+<body>
+    <div class="logo-container">
+        <div class="logo-outline logo-text">JOYRIDE</div>
+        <div class="logo-text">JOYRIDE</div>
+
+        <div class="logo-outline tagline">Uncommon Candy</div>
+        <div class="tagline">Uncommon Candy</div>
+    </div>
 </body>
 </html>
