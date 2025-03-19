@@ -14,9 +14,24 @@
             padding: 0;
             text-align: center;
         }
+        .purple-stripe {
+            background-color: #9146FF; /* Joyride Sweets purple */
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Ensures stripe stays on top */
+        }
+        .purple-stripe img {
+            height: 50px; /* Adjust height as needed */
+        }
         .container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 70px auto 0; /* Offset for fixed stripe height */
             padding: 20px;
         }
         .header {
@@ -37,13 +52,13 @@
         }
         h1 {
             font-size: 2.5em;
-            margin: 20px 0 10px 0; /* Reduced bottom margin for tighter spacing */
+            margin: 20px 0 10px 0;
             color: #000000;
         }
         .subtitle {
             font-size: 1.2em;
             color: #000000;
-            margin: 0 0 20px 0; /* Space below subtitle before button */
+            margin: 0 0 20px 0;
         }
         .video-section {
             display: flex;
@@ -54,14 +69,14 @@
         .video-box {
             width: 30%;
             height: 200px;
-            background-color: #ffffff; /* White for contrast */
+            background-color: #ffffff;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            overflow: hidden; /* Ensures iframe fits neatly */
+            overflow: hidden;
         }
         .video-box iframe {
             width: 100%;
@@ -69,14 +84,14 @@
             border: none;
         }
         .video-button-wrapper {
-            margin: 20px 0 40px 0; /* Space above and below the button */
+            margin: 20px 0 40px 0;
         }
         p {
             font-size: 1.2em;
             line-height: 1.6;
             max-width: 800px;
             margin: 0 auto 40px;
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for readability */
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 15px;
             border-radius: 10px;
         }
@@ -91,13 +106,16 @@
                 align-items: center;
             }
             .video-box {
-                width: 90%; /* Full width on mobile with some margin */
-                max-width: 400px; /* Limits width for better scaling */
+                width: 90%;
+                max-width: 400px;
             }
         }
     </style>
 </head>
 <body>
+    <div class="purple-stripe">
+        <img src="https://www.joyridesweets.com/cdn/shop/files/joyride-logo_c88298b6-d582-4eb9-af07-44f17908cb4a.png?v=1734980880&width=225" alt="Joyride Sweets Logo">
+    </div>
     <div class="container">
         <div class="header">
             <h1>Check out these reviews</h1>
