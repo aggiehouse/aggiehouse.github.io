@@ -37,8 +37,13 @@
         }
         h1 {
             font-size: 2.5em;
-            margin: 20px 0;
+            margin: 20px 0 10px 0; /* Reduced bottom margin for tighter spacing */
             color: #000000;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #000000;
+            margin: 0 0 20px 0; /* Space below subtitle before button */
         }
         .video-section {
             display: flex;
@@ -92,9 +97,10 @@
 <body>
     <div class="container">
         <div class="header">
+            <h1>Check out these reviews</h1>
+            <div class="subtitle">and pick out your favorites</div>
             <a href="https://www.amazon.com" target="_blank" class="amazon-link">Get Joyride Now</a>
         </div>
-        <h1>Joyride Candy is Delicious, but don’t take our word for it</h1>
         <div class="video-section">
             <div class="video-box">
                 <iframe src="https://youtube.com/embed/4jQtTKY-Irw?si=h_Z9EAzt5HgGx0RL" allowfullscreen></iframe>
