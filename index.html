@@ -7,16 +7,30 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+        body {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
         .logo-container {
             text-align: center;
-            margin-top: 50px;
         }
 
         .logo-text {
             font-family: 'Montserrat', sans-serif;
             font-size: 72px;
             font-weight: 700;
-            color: #00A651; /* Vibrant green color */
+            color: white;
+            text-shadow: 
+                -3px -3px 0 #4d0b7c,  
+                 3px -3px 0 #4d0b7c,
+                -3px  3px 0 #4d0b7c,
+                 3px  3px 0 #4d0b7c,
+                 0px  0px 5px #4d0b7c;
             letter-spacing: 5px;
         }
 
@@ -24,7 +38,12 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 24px;
             font-weight: 400;
-            color: #333;
+            color: white;
+            text-shadow: 
+                -2px -2px 0 #4d0b7c,  
+                 2px -2px 0 #4d0b7c,
+                -2px  2px 0 #4d0b7c,
+                 2px  2px 0 #4d0b7c;
             margin-top: -10px;
         }
     </style>
@@ -32,7 +51,7 @@
 <body>
     <div class="logo-container">
         <div class="logo-text">JOYRIDE</div>
-        <div class="tagline">Wildly Impossible Candy</div>
+        <div class="tagline">Uncommon Candy</div>
     </div>
 </body>
 </html>
