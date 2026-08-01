@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Gummy Shortlist · 11 Better-For-You Candies Worth Trying</title>
+<meta name="description" content="An independent shortlist of 11 better-for-you gummy brands — lower sugar, real ingredients, no artificial dyes. Not affiliated with Joyride Sweets.">
+<meta property="og:title" content="The Gummy Shortlist · 11 Better-For-You Candies Worth Trying">
+<meta property="og:description" content="An independent shortlist of 11 better-for-you gummy brands. Not affiliated with Joyride Sweets.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://joyride.com/">
+<meta property="og:image" content="https://joyride.com/og-card.png">
+<meta property="og:image:secure_url" content="https://joyride.com/og-card.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gummy Shortlist — 11 better-for-you candies, on joyride.com">
+<meta property="og:site_name" content="joyride.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://joyride.com/og-card.png">
+<meta name="twitter:title" content="The Gummy Shortlist · 11 Better-For-You Candies Worth Trying">
+<meta name="twitter:description" content="An independent shortlist of 11 better-for-you gummy brands. Not affiliated with Joyride Sweets.">
+<link rel="canonical" href="https://joyride.com/">
+
+<!-- =========================================================
+     ANALYTICS  ←← PASTE YOUR GA4 ID BELOW
+     ---------------------------------------------------------
+     Replace G-XXXXXXXXXX with your Measurement ID, then delete
+     this comment. Leave it as-is and nothing is tracked.
+
+     Note: Cloudflare analytics is DNS-level, not code-level —
+     there is nothing to paste here for it. Point joyride.com's
+     nameservers at Cloudflare and it starts counting on its own,
+     including bot-vs-human split. Run both: GA4 tells you what
+     people DO on the page, Cloudflare tells you how many arrived.
+     ========================================================= -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<style>
+  /* =========================================================
+     JOYRIDE CANDY SHOP  —  single-file page
+     TO CUSTOMIZE: scroll to the <script> at the bottom.
+       • Each brand has its own `url` (Amazon affiliate link).
+       • They all default to AFFILIATE_LINK — swap in individual
+         product links per brand whenever you like.
+     ========================================================= */
+
+  :root{
+    --base:      #FFFBF4;   /* warm candy-white */
+    --base-2:    #FFF3F6;   /* pink-tinted panel */
+    --ink:       #3A2A3F;   /* deep plum, softer than black */
+    --ink-soft:  #6E5A72;
+    --line:      #EEDFE6;
+
+    /* fruit-jelly rainbow */
+    --cherry:  #F5365C;
+    --blue:    #2E9DF0;
+    --orange:  #FF8A2B;
+    --grape:   #9C5FD4;
+    --aqua:    #16C4C0;
+    --magenta: #E84393;
+    --lime:    #7DC13C;
+    --lemon:   #FFC02E;
+    --gold:    #F0A020;
+    --pink:    #FF6FA5;
+    --indigo:  #6C5CE7;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    font-family:'Nunito', system-ui, sans-serif;
+    color:var(--ink);
+    background:
+      radial-gradient(1100px 600px at 12% -8%, #FFE6EF 0%, transparent 55%),
+      radial-gradient(1000px 620px at 92% 4%, #E4F4FF 0%, transparent 55%),
+      var(--base);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  .wrap{ width:min(1120px, 92vw); margin-inline:auto; }
+
+  /* ---------- floating gummy confetti in hero ---------- */
+  .sky{ position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }
+  .drop{
+    position:absolute; top:-40px; width:22px; height:26px;
+    border-radius:50% 50% 46% 46% / 60% 60% 40% 40%;
+    opacity:.7; animation:fall linear infinite;
+  }
+  .drop::after{ /* jelly highlight */
+    content:""; position:absolute; top:16%; left:20%;
+    width:34%; height:26%; border-radius:50%;
+    background:rgba(255,255,255,.7);
+  }
+  @keyframes fall{
+    0%{ transform:translateY(-10vh) rotate(0deg); }
+    100%{ transform:translateY(112vh) rotate(240deg); }
+  }
+
+  /* ---------- header ---------- */
+  header.top{
+    position:relative; z-index:2;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:22px 0;
+  }
+  .brand{
+    font-family:'Fredoka', sans-serif; font-weight:700; font-size:1.5rem;
+    letter-spacing:-.02em; color:var(--ink); text-decoration:none;
+    display:flex; align-items:center; gap:.5ch;
+  }
+  .brand .dot{
+    width:16px; height:16px; border-radius:50% 50% 46% 46% / 60% 60% 40% 40%;
+    background:var(--cherry); box-shadow:inset 3px 3px 0 rgba(255,255,255,.55);
+    display:inline-block;
+  }
+  .top .tag{
+    font-size:.72rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--ink-soft); border:2px solid var(--line); padding:6px 12px; border-radius:999px;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{ position:relative; z-index:2; padding:38px 0 20px; }
+  .eyebrow{
+    font-family:'Fredoka', sans-serif; font-weight:600;
+    font-size:.82rem; letter-spacing:.24em; text-transform:uppercase;
+    color:var(--magenta); margin-bottom:14px;
+  }
+  h1{
+    font-family:'Fredoka', sans-serif; font-weight:700;
+    font-size:clamp(2.6rem, 7.4vw, 5.4rem); line-height:.98;
+    letter-spacing:-.03em; max-width:14ch;
+  }
+  h1 .swirl{
+    background:linear-gradient(92deg,var(--cherry),var(--orange) 30%,var(--lemon) 52%,var(--lime) 70%,var(--aqua) 86%,var(--indigo));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .lede{
+    font-size:clamp(1.05rem, 2vw, 1.28rem); color:var(--ink-soft);
+    max-width:52ch; margin-top:22px; font-weight:600;
+  }
+  .hero-cta{ margin-top:30px; display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .btn{
+    font-family:'Fredoka', sans-serif; font-weight:600; font-size:1.02rem;
+    text-decoration:none; border:none; cursor:pointer;
+    padding:15px 26px; border-radius:999px;
+    transition:transform .16s ease, box-shadow .16s ease;
+    display:inline-flex; align-items:center; gap:.55ch;
+  }
+  .btn-jump{
+    background:var(--ink); color:#fff;
+    box-shadow:0 8px 0 #2a1d2e, 0 14px 22px rgba(58,42,63,.28);
+  }
+  .btn-jump:hover{ transform:translateY(2px); box-shadow:0 6px 0 #2a1d2e, 0 12px 18px rgba(58,42,63,.28); }
+  .criteria{
+    display:flex; gap:8px; flex-wrap:wrap; margin-top:8px;
+  }
+  .criteria span{
+    font-size:.8rem; font-weight:800; color:var(--ink-soft);
+    background:#fff; border:2px solid var(--line); padding:7px 13px; border-radius:999px;
+  }
+
+  /* ---------- section intro ---------- */
+  .lineup{ position:relative; z-index:2; padding:56px 0 30px; }
+  .kicker{
+    display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
+    border-top:3px dashed var(--line); padding-top:26px; margin-bottom:34px;
+  }
+  .kicker h2{
+    font-family:'Fredoka', sans-serif; font-weight:700;
+    font-size:clamp(1.6rem,3.4vw,2.4rem); letter-spacing:-.02em;
+  }
+  .kicker p{ color:var(--ink-soft); font-weight:600; font-size:.98rem; }
+
+  /* ---------- the gummy cards ---------- */
+  .grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+  .card.feature{ grid-column:1 / -1; }
+
+  .card{
+    position:relative; border-radius:30px; padding:28px 26px 24px;
+    background:#fff; border:2px solid var(--line);
+    box-shadow:0 12px 30px rgba(58,42,63,.07);
+    transition:transform .18s cubic-bezier(.34,1.56,.64,1), box-shadow .18s ease;
+    overflow:hidden;
+  }
+  /* candy sheen */
+  .card::before{
+    content:""; position:absolute; top:-40%; left:-10%;
+    width:60%; height:120%; transform:rotate(18deg);
+    background:linear-gradient(180deg, rgba(255,255,255,.5), rgba(255,255,255,0));
+    pointer-events:none;
+  }
+  .card:hover{ transform:translateY(-6px) rotate(-.6deg); box-shadow:0 20px 40px rgba(58,42,63,.14); }
+  .card.feature:hover{ transform:translateY(-4px); }
+
+  /* colored jelly rail top */
+  .card{ border-top:none; }
+  .rail{ position:absolute; top:0; left:0; right:0; height:8px; }
+
+  .rank{
+    font-family:'Fredoka', sans-serif; font-weight:700; line-height:1;
+    font-size:2.7rem; letter-spacing:-.03em;
+    -webkit-text-stroke:2px currentColor; color:transparent;
+    opacity:.9;
+  }
+  .card.feature .rank{ font-size:4.4rem; -webkit-text-stroke:3px currentColor; }
+
+  .name{
+    font-family:'Fredoka', sans-serif; font-weight:700;
+    font-size:1.5rem; letter-spacing:-.02em; margin-top:6px;
+  }
+  .card.feature .name{ font-size:2.3rem; }
+
+  .pouch{ width:106px; flex:none; position:relative; }
+  .pouch svg{
+    width:100%; height:auto; display:block;
+    filter:drop-shadow(0 9px 12px rgba(58,42,63,.20));
+    transition:transform .22s cubic-bezier(.34,1.56,.64,1);
+  }
+  .pouch .prodimg{
+    position:absolute; inset:0; width:100%; height:100%;
+    object-fit:contain; background:#fff; padding:9px;
+    border-radius:18px; border:2px solid var(--line);
+    box-shadow:0 9px 14px rgba(58,42,63,.14);
+    transition:transform .22s cubic-bezier(.34,1.56,.64,1);
+  }
+  .card:hover .pouch svg,
+  .card:hover .pouch .prodimg{ transform:rotate(3deg) translateY(-3px); }
+  .card.feature .pouch{ width:184px; }
+
+  .head-row{ display:flex; align-items:flex-start; justify-content:space-between; gap:16px; }
+
+  .desc{ color:var(--ink-soft); font-weight:600; margin-top:14px; font-size:1rem; }
+  .card.feature .desc{ font-size:1.12rem; max-width:60ch; }
+
+  .chips{ display:flex; flex-wrap:wrap; gap:7px; margin-top:16px; }
+  .chip{
+    font-size:.76rem; font-weight:800; letter-spacing:.01em;
+    padding:6px 11px; border-radius:999px; color:#fff; white-space:nowrap;
+  }
+
+  .buy{
+    margin-top:20px; display:inline-flex; align-items:center; gap:.6ch;
+    font-family:'Fredoka', sans-serif; font-weight:600; font-size:1rem;
+    text-decoration:none; color:#fff; padding:13px 22px; border-radius:999px;
+    transition:transform .15s ease, filter .15s ease; box-shadow:0 6px 0 rgba(0,0,0,.14);
+  }
+  .buy:hover{ transform:translateY(2px); box-shadow:0 4px 0 rgba(0,0,0,.14); filter:brightness(1.04); }
+  .buy .cart{ font-size:1.05em; }
+
+  .homebadge{
+    position:absolute; top:20px; right:20px;
+    font-family:'Fredoka',sans-serif; font-weight:600; font-size:.74rem;
+    letter-spacing:.06em; text-transform:uppercase;
+    background:var(--ink); color:#fff; padding:7px 14px; border-radius:999px;
+    box-shadow:0 6px 14px rgba(58,42,63,.25); z-index:3;
+  }
+
+  /* ---------- "looking for Joyride?" redirect module ---------- */
+  .redirect{
+    position:relative; z-index:3; margin-top:14px;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:18px; flex-wrap:wrap;
+    background:#fff; border:2px solid var(--line); border-radius:22px;
+    padding:18px 22px; box-shadow:0 10px 24px rgba(58,42,63,.07);
+  }
+  .redirect p{ font-weight:700; color:var(--ink); font-size:1rem; max-width:60ch; }
+  .redirect p small{
+    display:block; font-weight:600; color:var(--ink-soft);
+    font-size:.84rem; margin-top:4px;
+  }
+  .redirect .go{
+    font-family:'Fredoka', sans-serif; font-weight:600; font-size:.98rem;
+    text-decoration:none; white-space:nowrap;
+    background:var(--cherry); color:#fff;
+    padding:12px 20px; border-radius:999px;
+    box-shadow:0 5px 0 #c02246; transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .redirect .go:hover{ transform:translateY(2px); box-shadow:0 3px 0 #c02246; }
+
+  /* ---------- above-the-fold affiliate disclosure ---------- */
+  .disclose-strip{
+    position:relative; z-index:2; margin-top:26px;
+    font-size:.86rem; font-weight:700; color:var(--ink-soft);
+    background:var(--base-2); border:2px dashed var(--line);
+    border-radius:16px; padding:12px 18px; max-width:78ch;
+  }
+
+  /* ---------- footer ---------- */
+  footer{ position:relative; z-index:2; padding:60px 0 70px; }
+  .disclosure{
+    background:var(--base-2); border:2px solid var(--line); border-radius:24px;
+    padding:26px 28px; color:var(--ink-soft); font-weight:600; font-size:.92rem;
+    max-width:70ch;
+  }
+  .disclosure strong{ color:var(--ink); }
+  .disclosure a{ color:var(--magenta); font-weight:800; text-decoration:none; }
+  .disclosure a:hover{ text-decoration:underline; }
+  .signoff{
+    font-family:'Fredoka', sans-serif; font-weight:600; color:var(--ink-soft);
+    margin-top:30px; font-size:.95rem;
+  }
+  .signoff a{ color:var(--magenta); text-decoration:none; font-weight:700; }
+
+  @media (max-width:720px){
+    .grid{ grid-template-columns:1fr; }
+    .top .tag{ display:none; }
+    .card.feature .rank{ font-size:3.4rem; }
+    .card.feature .name{ font-size:1.7rem; }
+  }
+  @media (prefers-reduced-motion:reduce){
+    .drop{ display:none; }
+    *{ transition:none !important; }
+    html{ scroll-behavior:auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/"><span class="dot"></span>joyride.com</a>
+    <span class="tag">An independent gummy guide</span>
+  </header>
+
+  <!-- Sends candy-intent visitors where they were actually headed.
+       Keep this above everything else — it is both the honest move
+       and the strongest evidence of good-faith use of the domain. -->
+  <div class="redirect">
+    <p>
+      Looking for Joyride candy? You're on <strong>joyride.com</strong> — a different site.
+      <small>This site is independent and is not affiliated with, endorsed by, or connected to Joyride Sweets.</small>
+    </p>
+  </div>
+
+  <section class="hero">
+    <div class="sky" id="sky"></div>
+    <p class="eyebrow">America's chewiest shortlist</p>
+    <h1>Candy that <span class="swirl">likes you back.</span></h1>
+    <p class="lede">Since you're here anyway — 11 better-for-you gummies we think are worth a try. Less sugar, no junky dyes, all of the chew.</p>
+    <div class="hero-cta">
+      <a class="btn btn-jump" href="#lineup">See the lineup ↓</a>
+      <div class="criteria">
+        <span>Low &amp; zero sugar</span>
+        <span>Real ingredients</span>
+        <span>No artificial dyes</span>
+      </div>
+    </div>
+    <p class="disclose-strip">
+      <strong>Heads up:</strong> the shop links below are Amazon affiliate links. As an Amazon Associate we earn from qualifying purchases — at no extra cost to you.
+    </p>
+  </section>
+
+  <section class="lineup" id="lineup">
+    <div class="kicker">
+      <h2>The shortlist</h2>
+      <p>Our own picks, ordered by how much we like them — not a sales ranking. Tap any to shop on Amazon.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <footer>
+    <div class="disclosure">
+      <strong>A quick, honest note.</strong> joyride.com is an independent site and is a participant in the Amazon Associates Program. As an Amazon Associate we earn from qualifying purchases, which means we may receive a small commission — at no extra cost to you — when you buy through the links on this page. Our picks are personal opinion, offered for fun and information, not nutrition advice, and they are not a ranking of sales figures. Always check the label for current ingredients.
+      <br><br>
+      <strong>Not affiliated with Joyride Sweets.</strong> Joyride® is a trademark of its respective owner. This site is not affiliated with, sponsored by, or endorsed by Joyride Sweets or any brand listed on this page. If you were looking for Joyride candy, it lives at joyridesweets.com. All other brand names and trademarks are the property of their respective owners.
+    </div>
+    <p class="signoff">Made with a sweet tooth on <a href="/">joyride.com</a> · Prices &amp; availability live on Amazon.</p>
+  </footer>
+</div>
+
+<script>
+  /* =========================================================
+     EDIT HERE
+     ---------------------------------------------------------
+     AFFILIATE_LINK is your default Amazon Associates link.
+     Every brand's "url" points to it. To send a brand to a
+     specific product, just replace that brand's url with its
+     own Amazon link (keep your affiliate tag on the end).
+     ========================================================= */
+  const AFFILIATE_LINK = "https://amzn.to/43RJMjZ";
+
+  /* =========================================================
+     YOUR AMAZON ASSOCIATES TRACKING ID  ←← IMPORTANT
+     ---------------------------------------------------------
+     Paste your storefront/tracking ID here (it looks like
+     "yourname-20"). Find it in your Associates dashboard, top
+     bar, or inside your amzn.to link when expanded.
+     Once set, EVERY brand button below is credited to you.
+     Leave blank and links still work — they just won't earn.
+     ========================================================= */
+  const ASSOC_TAG = "smarterhom04e-20";
+
+  /* =========================================================
+     PER-BRAND DESTINATIONS
+     ---------------------------------------------------------
+     Blank  = auto-built Amazon search for that brand (credited
+              to your ASSOC_TAG above).
+     Filled = your own exact product/affiliate link for that
+              brand (paste an amzn.to or product URL to override).
+     ========================================================= */
+  const LINKS = {
+    "SmartSweets":          "https://www.amazon.com/stores/SmartSweets/page/E0787E5E-D59B-4A60-8F31-667D01BF9EB8?lp_asin=B09HRGG2RJ&tag=smarterhom04e-20",
+    "JOYRIDE":              AFFILIATE_LINK,   // your existing Joyride link
+    "YumEarth":             "https://www.amazon.com/stores/YumEarth/page/BB35B7FC-80A7-412B-B216-FC433FFB9335?lp_asin=B00MVW7UFI&tag=smarterhom04e-20",
+    "BEHAVE":               "https://www.amazon.com/stores/BEHAVE/page/9C62CAE3-6907-451C-A271-FAFFA75631CE?lp_asin=B0CKHGFCQZ&tag=smarterhom04e-20",
+    "Surf Sweets":          "https://www.amazon.com/stores/SurfSweets/page/8ADE39EA-B5D1-41CC-A03D-1314A42566C3?lp_asin=B01N68C4M7&tag=smarterhom04e-20",
+    "Black Forest Organic": "https://www.amazon.com/stores/BlackForest/page/77F4D3DF-3E57-47EF-9057-AF0AAB0BE57C?lp_asin=B0G1V6L89F&tag=smarterhom04e-20",
+    "Blobs":                "https://www.amazon.com/stores/Blobs/page/C1128ED2-816B-4C02-AE9E-64080ED6F741?lp_asin=B0CG7H3CT4&tag=smarterhom04e-20",
+    "Better Sour":          "https://www.amazon.com/stores/BetterSour/page/C48486AE-E098-4D46-AEB1-083BF402CCEA?lp_asin=B0C95JKHXS&tag=smarterhom04e-20",
+    "Wholesome":            "https://www.amazon.com/stores/Wholesome/page/B5144C85-DCBE-49ED-AC4C-348FF3781F7C?lp_asin=B01KML3UJE&tag=smarterhom04e-20",
+    "Tru Sweets":           "https://www.amazon.com/stores/Torie+%26+Howard/page/19CBB064-1201-472A-B631-9B2374DBDC4E?lp_asin=B010R3NTRU&tag=smarterhom04e-20",
+    "Kiss My Keto":         "https://www.amazon.com/stores/KissMyKeto/page/B5C68E46-D0B8-49AE-84C4-111D4DEBBC61?lp_asin=B07T596YGZ&tag=smarterhom04e-20"
+  };
+
+  /* =========================================================
+     SPECIFIC PRODUCTS  (Amazon ASINs)
+     ---------------------------------------------------------
+     brandLink() turns each ASIN into a /dp/<ASIN> product link
+     carrying your ASSOC_TAG. To point a brand somewhere else,
+     paste a full URL in LINKS above — LINKS always wins.
+     Note: ASINs can go out of stock; if one 404s, grab a fresh
+     product link from SiteStripe and drop it into LINKS.
+
+     HEADS UP: LINKS is currently filled in for all 11 brands, so
+     LINKS always wins and nothing below actually fires right now.
+     This block is a safety net — if you ever blank out a brand's
+     LINKS entry, its ASIN here takes over instead of dumping the
+     visitor on a generic search page. Keep the ASINs current.
+     ========================================================= */
+  const PRODUCTS = {
+    "SmartSweets":          "B09HRGG2RJ", // Fresh & Fruity Variety Pack (8)
+    "JOYRIDE":              "",           // uses your amzn.to link in LINKS
+    "YumEarth":             "B00MVW7UFI", // Organic Gummy Bears, 10 snack packs
+    "BEHAVE":               "B0CKHGFCQZ", // Sweet Bears 6-Pack
+    "Surf Sweets":          "B01N68C4M7", // Organic Fruity Bears (Pack of 12)
+    "Black Forest Organic": "B0G1V6L89F", // Organic Gummy Bears, 18oz resealable
+    "Blobs":                "B0CG7H3CT4", // 2g-sugar Variety Snack Pack (6)
+    "Better Sour":          "B0C95JKHXS", // Guava Calamansi Ume, 3g sugar (10)
+    "Wholesome":            "B01KML3UJE", // Organic DelishFish, 6oz
+    "Tru Sweets":           "B010R3NTRU", // Torie & Howard Chewie Fruities, Assorted
+    "Kiss My Keto":         "B07T596YGZ"  // Sugar Free Gummy Bears, 12-Pack
+  };
+
+  // Builds a brand-specific Amazon search link, credited to ASSOC_TAG.
+  function amazonSearch(name){
+    const q = encodeURIComponent(name + " gummy candy");
+    return "https://www.amazon.com/s?k=" + q + (ASSOC_TAG ? "&tag=" + encodeURIComponent(ASSOC_TAG) : "");
+  }
+  // Priority: explicit full URL (LINKS) > specific product (PRODUCTS) > search.
+  function brandLink(name){
+    const explicit = (LINKS[name] || "").trim();
+    if(explicit) return explicit;
+    const asin = (PRODUCTS[name] || "").trim();
+    if(asin) return "https://www.amazon.com/dp/" + asin + (ASSOC_TAG ? "?tag=" + encodeURIComponent(ASSOC_TAG) : "");
+    return amazonSearch(name);
+  }
+
+  /* =========================================================
+     PRODUCT IMAGES  (optional — leave blank to show the
+     built-in candy illustration instead)
+     ---------------------------------------------------------
+     HOW TO GET AMAZON-APPROVED IMAGES (compliant way):
+       1. Log in to your Amazon Associates account.
+       2. Browse to each brand's product page on Amazon.
+       3. Use the SiteStripe bar at the top → "Image" → "Get Image",
+          OR right-click the main product photo and "Copy image address".
+       4. Paste that URL below next to the matching brand name.
+     Blank = illustration. A broken/blocked URL also falls back
+     to the illustration automatically, so the page never breaks.
+     ========================================================= */
+  const IMAGES = {
+    "SmartSweets":          "",
+    "JOYRIDE":              "",
+    "YumEarth":             "",
+    "BEHAVE":               "",
+    "Surf Sweets":          "",
+    "Black Forest Organic": "",
+    "Blobs":                "",
+    "Better Sour":          "",
+    "Wholesome":            "",
+    "Tru Sweets":           "",
+    "Kiss My Keto":         ""
+  };
+
+  const BRANDS = [
+    {
+      rank: 1, name: "SmartSweets", color: "var(--cherry)", feature: true, candy: "bears",
+      desc: "The brand that kicked the whole better-for-you gummy movement into gear. Plant-based bears, sour buddies and peach rings with a fraction of the sugar — still the category heavyweight on shelves nationwide.",
+      chips: ["Low sugar", "Plant-based", "No sugar alcohols"]
+    },
+    {
+      rank: 2, name: "JOYRIDE", color: "var(--blue)", candy: "worms",
+      desc: "Zero sugar, ~45 calories a serving and a serious hit of fiber, powered into the spotlight by co-owner Ryan Trahan. Reached #1 candy at Target during launch runs.",
+      chips: ["Zero sugar", "High fiber", "Vegan"]
+    },
+    {
+      rank: 3, name: "YumEarth", color: "var(--orange)", candy: "worms",
+      desc: "Organic, allergy-friendly and made with real fruit flavor — a mainstay in the natural-grocery aisle for gummy bears, worms and fruit snacks.",
+      chips: ["USDA Organic", "Allergy-friendly", "Real fruit"]
+    },
+    {
+      rank: 4, name: "BEHAVE", color: "var(--grape)", candy: "bears",
+      desc: "Low sugar, high fiber and unapologetically bold on flavor. The go-to for people who want a full gummy experience without the sugar crash.",
+      chips: ["Low sugar", "High fiber", "Low net carb"]
+    },
+    {
+      rank: 5, name: "Surf Sweets", color: "var(--aqua)", candy: "worms",
+      desc: "Organic gummies made with real fruit juice, free of the top allergens and the classic artificial dyes. A clean-label favorite for kids and lunchboxes.",
+      chips: ["Organic", "Real fruit juice", "Top-8 free"]
+    },
+    {
+      rank: 6, name: "Black Forest Organic", color: "var(--magenta)", candy: "bears",
+      desc: "The nostalgic gummy bear, cleaned up. USDA organic bears and worms with recognizable ingredients — familiar chew, better backstory.",
+      chips: ["USDA Organic", "Classic bears", "Non-GMO"]
+    },
+    {
+      rank: 7, name: "Blobs", color: "var(--lime)", candy: "drops",
+      desc: "Barely-there sugar — just 2g a bag — with no sugar alcohols, no dyes and no stevia. Sweetened with monk fruit and allulose and loaded with prebiotic fiber, these squishy blobs punch way above their calorie count.",
+      chips: ["2g sugar", "No dyes", "Vegan"]
+    },
+    {
+      rank: 8, name: "Better Sour", color: "var(--lemon)", candy: "rings",
+      desc: "Hawai'i-born sour gummy stars with bold tropical flavor, only 3g sugar and real functional fiber. Proof a mouth-puckering sour hit can still be plant-based, gluten-free and genuinely better-for-you.",
+      chips: ["3g sugar", "High fiber", "Vegan"]
+    },
+    {
+      rank: 9, name: "Wholesome", color: "var(--gold)", candy: "bears",
+      desc: "Organic, fair-trade fruit snacks and bears from a pantry name people already trust. Simple ingredients, easy to find, easy to feel good about.",
+      chips: ["Organic", "Fair Trade", "Non-GMO"]
+    },
+    {
+      rank: 10, name: "Tru Sweets", color: "var(--pink)", candy: "drops",
+      desc: "The organic chews formerly known as Torie & Howard — vibrant real-fruit flavors and a clean label with a loyal following.",
+      chips: ["Organic", "Real fruit", "Gluten-free"]
+    },
+    {
+      rank: 11, name: "Kiss My Keto", color: "var(--indigo)", candy: "bears",
+      desc: "Zero-sugar, keto-friendly gummy bears built for low-carb lifestyles — proof that 'on plan' and 'gummy bear' can live in the same sentence.",
+      chips: ["Zero sugar", "Keto-friendly", "Low carb"]
+    }
+  ];
+
+  /* ---- product-pack SVG generator ---- */
+  const cssVars = getComputedStyle(document.documentElement);
+  function hex(v){ const m = String(v).match(/--[\w-]+/); return m ? cssVars.getPropertyValue(m[0]).trim() : v; }
+
+  function wrapName(name){
+    const words = name.split(" ");
+    if(name.length <= 11 || words.length === 1) return [name];
+    let l1 = "", l2 = "";
+    for(const w of words){
+      if(l2 === "" && (l1 ? l1+" "+w : w).length <= 11) l1 = l1 ? l1+" "+w : w;
+      else l2 = l2 ? l2+" "+w : w;
+    }
+    return l2 ? [l1, l2] : [l1];
+  }
+
+  function candyArt(type, c){
+    const dot = (x,y,r,o) => `<circle cx="${x}" cy="${y}" r="${r}" fill="#fff" opacity="${o}"/>`;
+    if(type === "bears"){
+      const bear = (x,y,s) => {
+        const g = (dx,dy,r) => `<circle cx="${(x+dx*s).toFixed(1)}" cy="${(y+dy*s).toFixed(1)}" r="${(r*s).toFixed(1)}"/>`;
+        return `<g fill="${c}">${g(0,3,7.6)}${g(-6.4,1,3.1)}${g(6.4,1,3.1)}${g(-3.8,10,3.3)}${g(3.8,10,3.3)}${g(0,-6.2,5.4)}${g(-4,-10.6,2.5)}${g(4,-10.6,2.5)}</g>${dot(x-2,y-8,1.5,.55)}`;
+      };
+      return bear(48,122,1.02) + bear(70,111,1.18) + bear(92,122,1.02);
+    }
+    if(type === "worms"){
+      const worm = (y) => {
+        const d = `M32 ${y} C 46 ${y-13}, 58 ${y+13}, 70 ${y} S 94 ${y-13}, 108 ${y}`;
+        return `<path d="${d}" fill="none" stroke="${c}" stroke-width="9" stroke-linecap="round"/><path d="${d}" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".3" transform="translate(0,-2.4)"/>`;
+      };
+      return worm(104) + worm(131);
+    }
+    if(type === "rings"){
+      const ring = (x) => `<circle cx="${x}" cy="117" r="12" fill="none" stroke="${c}" stroke-width="6.6"/>${dot(x-4,111,1.6,.5)}`;
+      return ring(52) + ring(70) + ring(88);
+    }
+    if(type === "strips"){
+      let s = "";
+      [46,62,78,94].forEach(x => { s += `<rect x="${x-6}" y="86" width="12" height="62" rx="6" fill="${c}"/>`; });
+      for(let i=0;i<16;i++) s += dot((40+Math.random()*60).toFixed(1),(90+Math.random()*54).toFixed(1),0.9,0.5);
+      return s;
+    }
+    const drop = (x,y) => `<circle cx="${x}" cy="${y}" r="10" fill="${c}"/>${dot(x-3,y-3,2.6,.5)}`;
+    return drop(52,110) + drop(72,126) + drop(90,108);
+  }
+
+  function pouch(colorVar, name, type){
+    const c = hex(colorVar);
+    const lines = wrapName(name);
+    const fs = lines.length === 2 ? 11 : (name.length <= 8 ? 15 : 12);
+    const startY = 51 - (lines.length*fs*1.05)/2 + fs*0.8;
+    const label = lines.map((ln,i) =>
+      `<text x="70" y="${(startY+i*fs*1.05).toFixed(1)}" text-anchor="middle" font-family="Fredoka, sans-serif" font-weight="700" font-size="${fs}" fill="${c}">${ln}</text>`).join("");
+    const bandH = lines.length === 2 ? 34 : 24;
+    return `<svg viewBox="0 0 140 176" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${name} gummies pack">
+      <rect x="16" y="6" width="108" height="16" rx="4" fill="${c}"/>
+      <rect x="16" y="6" width="108" height="16" rx="4" fill="#000" opacity=".16"/>
+      ${[24,40,56,72,88,104].map(x=>`<rect x="${x}" y="7" width="2" height="14" fill="#fff" opacity=".22"/>`).join("")}
+      <rect x="14" y="18" width="112" height="150" rx="18" fill="${c}"/>
+      <path d="M26 26 Q 34 24 40 30 L 40 156 Q 30 160 26 150 Z" fill="#fff" opacity=".14"/>
+      <rect x="24" y="${51-bandH/2}" width="92" height="${bandH}" rx="8" fill="#fff"/>
+      ${label}
+      <rect x="22" y="76" width="96" height="82" rx="14" fill="#FFF7EA"/>
+      <rect x="22" y="76" width="96" height="82" rx="14" fill="none" stroke="#000" opacity=".06" stroke-width="2"/>
+      ${candyArt(type, c)}
+      <rect x="14" y="150" width="112" height="18" rx="10" fill="#000" opacity=".07"/>
+    </svg>`;
+  }
+
+  /* ---- render cards ---- */
+  const grid = document.getElementById("grid");
+  grid.innerHTML = BRANDS.map(b => {
+    const url = brandLink(b.name);
+    const feature = b.feature ? " feature" : "";
+    const home = b.home ? `<span class="homebadge">🏠 Home team</span>` : "";
+    const chips = b.chips.map(c =>
+      `<span class="chip" style="background:${b.color}">${c}</span>`).join("");
+    const num = String(b.rank).padStart(2,"0");
+    return `
+      <article class="card${feature}">
+        <span class="rail" style="background:${b.color}"></span>
+        ${home}
+        <div class="head-row">
+          <div>
+            <div class="rank" style="color:${b.color}">${num}</div>
+            <div class="name">${b.name}</div>
+          </div>
+          <div class="pouch">
+            ${pouch(b.color, b.name, b.candy)}
+            ${(IMAGES[b.name] || "").trim() ? `<img class="prodimg" src="${IMAGES[b.name].trim()}" alt="${b.name} gummies" loading="lazy" onerror="this.remove()">` : ""}
+          </div>
+        </div>
+        <p class="desc">${b.desc}</p>
+        <div class="chips">${chips}</div>
+        <a class="buy" style="background:${b.color}" href="${url}"
+           target="_blank" rel="noopener sponsored nofollow">
+          <span class="cart">🛒</span> Shop on Amazon
+        </a>
+      </article>`;
+  }).join("");
+
+  /* ---- hero gummy confetti ---- */
+  (function(){
+    const sky = document.getElementById("sky");
+    const cols = ["--cherry","--blue","--orange","--grape","--aqua","--magenta","--lime","--lemon","--pink","--indigo"];
+    const n = window.innerWidth < 720 ? 10 : 18;
+    let html = "";
+    for(let i=0;i<n;i++){
+      const c = cols[i % cols.length];
+      const left = Math.random()*100;
+      const dur = 9 + Math.random()*10;
+      const delay = -Math.random()*14;
+      const scale = 0.6 + Math.random()*0.9;
+      html += `<span class="drop" style="left:${left}%;background:var(${c});
+        animation-duration:${dur}s;animation-delay:${delay}s;transform:scale(${scale})"></span>`;
+    }
+    sky.innerHTML = html;
+  })();
+</script>
+</body>
+</html>
